@@ -6,11 +6,30 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 20:50:50 by aaslan            #+#    #+#             */
-/*   Updated: 2023/12/13 18:53:02 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/12/14 11:15:17 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
+
+ScalarConverter::ScalarConverter()
+{
+}
+
+ScalarConverter::ScalarConverter(const ScalarConverter &other)
+{
+	(void)other;
+}
+
+ScalarConverter &ScalarConverter::operator=(const ScalarConverter &other)
+{
+	(void)other;
+	return *this;
+}
+
+ScalarConverter::~ScalarConverter(void)
+{
+}
 
 void ScalarConverter::validate_characters(std::string &str)
 {
