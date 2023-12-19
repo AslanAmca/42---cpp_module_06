@@ -6,14 +6,14 @@
 #    By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/19 12:33:21 by aaslan            #+#    #+#              #
-#    Updated: 2023/12/19 23:15:49 by aaslan           ###   ########.fr        #
+#    Updated: 2023/12/19 23:26:49 by aaslan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		:= convert
+NAME		:= serializer
 CXX			:= c++
 CXXFLAGS	:= -Wall -Wextra -Werror -std=c++98
-SRC			:= ScalarConverter.cpp main.cpp
+SRC			:= Data.cpp Serializer.cpp main.cpp
 
 all: $(NAME)
 
